@@ -1,0 +1,9 @@
+@media all and (max-width: 800px)
+{
+    .container{
+        flex-wrap: wrap;
+    }
+    .container-col{
+        width: 100%
+    }
+}

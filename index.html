@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weekly WebDev Challenge - 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=latin-ext" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/Masteralb-logo.png" alt="Masteralb top logo">
+    </header>
+    <section class="container">
+        <div class="container-col">
+            <h1>Register Form</h1>
+            <form class="form">
+                <input class="form-field form-field-username" type="text" placeholder="Username">
+                <input class="form-field form-field-password" type="password" placeholder="Password">
+                <input class="form-field form-field-password" type="password" placeholder="Confirm Password">
+                <input class="form-field form-field-email" type="email" placeholder="E-mail">
+                <select class="form-field form-field-location" >
+                    <option disabled selected hidden>Your location</option>
+                    <option value="war">Warszawa</option>
+                    <option value="krk">Kraków</option>
+                    <option value="lbn">Lublin</option>
+                </select>
+                <div class="form-checkbox-container">
+                    <div class="form-checkbox-outline">
+                        <input class="form-checkbox-field" type="checkbox" id="register-form-checkbox">
+                    </div>
+                    <label class="checkbox-field-label" for="register-form-checkbox">I have read and accept the terms of use.</label>
+                </div>
+                <button class="form-btn-submit" type="submit">Sign up</button>
+            </form>
+            <h1>Send Email</h1>
+            <form class="form">
+                <input class="form-field form-field-username" type="text" placeholder="Your Name">
+                <input class="form-field form-field-email" type="email" placeholder="Your E-mail">
+                <textarea class="form-field form-textarea" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                <div class="form-checkbox-container">
+                    <div class="form-checkbox-outline">
+                        <input class="form-checkbox-field" type="checkbox" id="send-email-checkbox">
+                    </div>
+                    <label class="checkbox-field-label" for="send-email-checkbox">Send a copy to my E-mail.</label>
+                </div>
+                <button class="form-btn-submit" type="submit">Send Email</button>
+            </form>
+        </div>
+        <div class="container-col">
+            <h1>Seign In Form</h1>
+            <form class="form">
+                <input class="form-field form-field-username" type="text" placeholder="Username">
+                <input class="form-field form-field-password" type="password" placeholder="Password">
+                <div class="form-small-container">
+                    <div class="form-checkbox-container form-field-smaller">
+                        <div class="form-checkbox-outline">
+                            <input class="form-checkbox-field" type="checkbox" id="sign-in-form-checkbox">
+                        </div>
+                        <label class="checkbox-field-label" for="sign-in-form-checkbox">Remember me.</label>
+                    </div>
+                    <button class="form-btn-submit form-field-smaller" type="submit">Sign In</button>
+                </div>
+            </form>
+            <h1>Recover Form</h1>
+            <form class="form">
+                <input class="form-field form-field-email" type="email" placeholder="Enter your E-mail">
+                <input class="form-field form-field-phone" type="number" placeholder="Enter your phone number">
+                <div class="form-small-container">
+                    <button class="form-btn-submit form-field-smaller" type="submit">Send</button>
+                    <button class="form-btn-submit form-btn-submit-done form-field-smaller" type="submit">Done</button>
+                </div>
+            </form>
+            <h1>Subscribe Form</h1>
+            <form class="form">
+                <input class="form-field form-field-email" type="email" placeholder="Enter your E-mail">
+                <div class="form-small-container">
+                    <button class="form-btn-submit form-field-smaller" type="submit">Subscribe</button>
+                    <button class="form-btn-submit form-btn-submit-sub form-field-smaller" type="submit">No, Thanks</button>
+                </div>
+            </form>
+            <footer class="footer">
+                <img src="/img/Masteralb.com-bottom.png" alt="Masteralb.com bottom logo">
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
