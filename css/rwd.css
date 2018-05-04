@@ -1,9 +1,39 @@
-@media all and (max-width: 800px)
+@media all and (max-width: 970px)
 {
+    .header{
+        margin: 0;
+        padding: 5px;
+    }
+    .first-h1{
+        margin-top: 0px;
+    }
     .container{
         flex-wrap: wrap;
     }
     .container-col{
         width: 100%
+    }
+    .form{
+        max-width: 600px;
+    }
+}
+
+@media all and (max-width: 494px)
+{
+    body{
+        padding-bottom: 0;
+    }
+    .header img{
+        width: 70%;
+    }
+
+    .form-small-container{
+        flex-wrap: wrap;
+    }
+    .form-field-smaller{
+        width: 100%;
+    }
+    .footer{
+        width: 70%;
     }
 }
