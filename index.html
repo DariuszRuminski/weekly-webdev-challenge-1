@@ -17,11 +17,11 @@
         <div class="container-col">
             <h1 class="first-h1">Register Form</h1>
             <form class="form">
-                <input class="form-field form-field-username" type="text" placeholder="Username">
-                <input class="form-field form-field-password" type="password" placeholder="Password">
-                <input class="form-field form-field-password" type="password" placeholder="Confirm Password">
-                <input class="form-field form-field-email" type="email" placeholder="E-mail">
-                <select class="form-field form-field-location" >
+                <input class="form-field form-field-username" type="text" placeholder="Username" required>
+                <input class="form-field form-field-password" type="password" placeholder="Password" required>
+                <input class="form-field form-field-password" type="password" placeholder="Confirm Password" required>
+                <input class="form-field form-field-email" type="email" placeholder="E-mail" required>
+                <select class="form-field form-field-location" required>
                     <option disabled selected hidden>Your location</option>
                     <option value="war">Warszawa</option>
                     <option value="krk">Kraków</option>
@@ -29,7 +29,7 @@
                 </select>
                 <div class="form-checkbox-container">
                     <div class="form-checkbox-outline">
-                        <input class="form-checkbox-field" type="checkbox" id="register-form-checkbox">
+                        <input class="form-checkbox-field" type="checkbox" id="register-form-checkbox" required>
                     </div>
                     <label class="checkbox-field-label" for="register-form-checkbox">I have read and accept the terms of use.</label>
                 </div>
@@ -37,12 +37,12 @@
             </form>
             <h1>Send Email</h1>
             <form class="form">
-                <input class="form-field form-field-username" type="text" placeholder="Your Name">
-                <input class="form-field form-field-email" type="email" placeholder="Your E-mail">
-                <textarea class="form-field form-textarea" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                <input class="form-field form-field-username" type="text" placeholder="Your Name" required>
+                <input class="form-field form-field-email" type="email" placeholder="Your E-mail" required>
+                <textarea class="form-field form-textarea" cols="30" rows="10" placeholder="Type your message..." required></textarea>
                 <div class="form-checkbox-container">
                     <div class="form-checkbox-outline">
-                        <input class="form-checkbox-field" type="checkbox" id="send-email-checkbox">
+                        <input class="form-checkbox-field" type="checkbox" id="send-email-checkbox" required>
                     </div>
                     <label class="checkbox-field-label" for="send-email-checkbox">Send a copy to my E-mail.</label>
                 </div>
@@ -52,12 +52,12 @@
         <div class="container-col">
             <h1>Sign In Form</h1>
             <form class="form">
-                <input class="form-field form-field-username" type="text" placeholder="Username">
-                <input class="form-field form-field-password" type="password" placeholder="Password">
+                <input class="form-field form-field-username" type="text" placeholder="Username" required>
+                <input class="form-field form-field-password" type="password" placeholder="Password" required>
                 <div class="form-small-container">
                     <div class="form-checkbox-container form-field-smaller">
                         <div class="form-checkbox-outline">
-                            <input class="form-checkbox-field" type="checkbox" id="sign-in-form-checkbox">
+                            <input class="form-checkbox-field" type="checkbox" id="sign-in-form-checkbox" required>
                         </div>
                         <label class="checkbox-field-label" for="sign-in-form-checkbox">Remember me.</label>
                     </div>
@@ -66,8 +66,8 @@
             </form>
             <h1>Recover Form</h1>
             <form class="form">
-                <input class="form-field form-field-email" type="email" placeholder="Enter your E-mail">
-                <input class="form-field form-field-phone" type="number" placeholder="Enter your number">
+                <input class="form-field form-field-email" type="email" placeholder="Enter your E-mail" required>
+                <input class="form-field form-field-phone" type="number" placeholder="Enter your number" required>
                 <div class="form-small-container">
                     <button class="form-btn-submit form-field-smaller" type="submit">Send</button>
                     <button class="form-btn-submit form-btn-submit-done form-field-smaller" type="submit">Done</button>
@@ -75,7 +75,7 @@
             </form>
             <h1>Subscribe Form</h1>
             <form class="form">
-                <input class="form-field form-field-email" type="email" placeholder="Enter your E-mail">
+                <input class="form-field form-field-email" type="email" placeholder="Enter your E-mail" required>
                 <div class="form-small-container">
                     <button class="form-btn-submit form-field-smaller" type="submit">Subscribe</button>
                     <button class="form-btn-submit form-btn-submit-sub form-field-smaller" type="submit">No, Thanks</button>
@@ -86,5 +86,7 @@
             </footer>
         </div>
     </section>
+    
+    <script src='js/main.js'></script>
 </body>
 </html>

@@ -88,13 +88,12 @@ h1{
     outline: none;
     margin: 0;
     position: absolute;
-    left: -1px;
     top: -1px;
-    border-radius: 3px;
+    left: -1px;
 }
 .form-checkbox-field:checked{
     background-color: #8cc00c;
-    transform: scale(0.75);
+    transform: scale(0.8);
 }
 
 .form-btn-submit{
